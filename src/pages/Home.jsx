@@ -1,5 +1,7 @@
 import '../index.css'
 import React from 'react'
+import {NavLink} from 'react-router-dom'
+import Footer from '../components/Footer'
 
 function Home() {
   return (
@@ -25,6 +27,7 @@ function Home() {
             <a href="https://books.zuri.team/python-for-beginners?ref_id=VoN" id='book__python'>Python Books</a>
             <a href="https://background.zuri.team/" id='pitch'>Background Check for Coders</a>
             <a href="https://books.zuri.team/design-rules" id='book__design'>Design Books</a>
+            <NavLink to={'/contact'}  id='contact'>Contact Me</NavLink>
         </div>
 
         <div className='slack-git'>
@@ -33,12 +36,7 @@ function Home() {
         </div>
 
         <hr />
-
-        <footer>
-            <div><img src="/img/zuri.svg" alt="Zuri" /></div>
-            <div><p>HNG Internship 9 Frontend Task</p></div>
-            <div><img src="/img/I4G.svg" alt="Ingressive4Good" /></div>
-        </footer>
+        <Footer />
     </div>
   )
 }
