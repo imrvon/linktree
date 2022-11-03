@@ -145,7 +145,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 10%;
+  margin-top: 3%;
   width: 100%;
 }
 
@@ -240,6 +240,7 @@ footer {
   font-size: 16px;
   line-height: 24px;
   color: #475467;
+  text-align: left;
 }
 
 .accept {
@@ -263,6 +264,17 @@ footer {
 }
 
 @media screen and (max-width: 650px) {
+  .contact header {
+    width: 90%;
+  }
+
+  .contact .flex-div {
+    flex-direction: column;
+  }
+
+  .contact form {
+    width: 90%;
+  }
 
   footer {
     flex-direction: column;
