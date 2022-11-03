@@ -141,9 +141,44 @@ footer {
 
 /* Contact Page */
 .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
   width: 100%;
 }
-.contact h1, .contact p, .contact label {
+
+.contact header {
+  width: 50%;
+}
+
+.contact header .contact-h1 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  margin-bottom: 20px;
+  letter-spacing: -0.02em;
+  color: #101828;
+}
+
+.contact .contact-p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #475467;
+  margin-bottom: 48px;
+}
+
+.contact label {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #344054;
+  margin-bottom: 6px;
+}
+
+.contact .contact-h1, .contact .contact-p, .contact label {
   text-align: left;
 }
 
@@ -161,6 +196,10 @@ footer {
   gap: 8px;
 }
 
+.contact form .flex-div > div {
+  flex-basis: 48%;
+}
+
 .contact input, .contact textarea {
   display: block;
   padding: 10px 14px;
@@ -169,11 +208,17 @@ footer {
   border-radius: 8px;
   outline: none;
   width: 100%;
+  margin-bottom: 24px;
+}
+
+.contact textarea {
+  resize: none;
 }
 
 .contact input[type=checkbox] {
   display: inline;
   width: auto;
+  margin-bottom: 0;
 }
 .contact input[type=submit] {
   background: #1570EF;
@@ -183,6 +228,27 @@ footer {
   color: #FFFFFF;
 }
 
+::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #667085;
+}
+
+.contact span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #475467;
+}
+
+.accept {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 32px;
+}
 
 /* Media Queries */
 
