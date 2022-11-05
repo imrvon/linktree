@@ -1,5 +1,6 @@
 import React from 'react'
 import Footer from '../components/Footer'
+import {NavLink} from 'react-router-dom'
 
 function Contact() {
   return (
@@ -25,7 +26,7 @@ function Contact() {
         <label htmlFor="message">Message</label>
         <textarea name="" id="message" cols="30" rows="10" placeholder="Send me a message and I'll reply you as soon as possible..." required/>
         <div className='accept'><input type="checkbox" name="" id="" required /> <span>You agree to providing your data to Zuri who may contact you.</span></div>
-        <input type="submit" value="send message" id='btn__submit' />
+        <NavLink to={"/contact"} className="contact-submit"><input type="submit" value="send message" id='btn__submit' /></NavLink>
       </form>
 
       <Footer />
